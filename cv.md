@@ -24,7 +24,7 @@
  * __[lovetriangle](https://github.com/MashaLarchenko/love-triangle/blob/master/src/index.js)__ 
  * __[money-exchange](https://github.com/MashaLarchenko/money-exchange/blob/master/src/index.js)__
  
-### Courses:
+### Education and Courses:
  * __2012-2017  The Faculty of Biology of BSU__
  * __[HTML CSS Basics on Codeacademy](https://www.codecademy.com/users/MariaLarchenko/achievements)__
  * __[htmlacademy](https://htmlacademy.ru/profile/id538487/achievements)__
