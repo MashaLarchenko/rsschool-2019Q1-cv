@@ -30,6 +30,7 @@
  * __[htmlacademy](https://htmlacademy.ru/profile/id538487/achievements)__
  * __JavaRush__
  
-
+ ### English level :
+ Pre-intermediate( reading and underding technical documentation).  I am studying English in duolingo. For level up audition i am watching some serias in english.
  
  
