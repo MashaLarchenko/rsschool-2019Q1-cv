@@ -1,0 +1,379 @@
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url(assets/fonts/Lato/Lato-Regular.woff2) format('woff2');
+    src: url(assets/fonts/Lato/Lato-Regular.woff) format('woff'), url(assets/fonts/Lato/Lato-Regular.eot) format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url(assets/fonts/Lato/Lato-Bold.woff2) format('woff2');
+    src: url(assets/fonts/Lato/Lato-Bold.woff) format('woff'), url(assets/fonts/Lato/Lato-Bold.eot) format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Maven Pro';
+    src: url(assets/fonts/MavenPro/MavenPro-Regular.ttf) format('truetype');
+    src: url(assets/fonts/MavenPro/Maven-Pro-regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url(assets/fonts/Lobster-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NatoSan';
+    src: url(assets/fonts/NotoSansKR/NotoSansKR-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    color: rgba(0, 0, 0, 1)
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    z-index: 1;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top right, #e2c107, #429617);
+}
+
+h1, h2 {
+    padding-top: 1%;
+    font-size: 2.4em;
+    line-height: 55px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    vertical-align: 20px;
+}
+
+h1 {
+    padding-top: 2%;
+}
+
+h2 {
+    font-size: 2.1em;
+    line-height: 2%;
+}
+
+h3 {
+    padding-bottom: 10px;
+    font-size: 1.9em;
+    font-family: 'Lato-Bold', sans-serif;
+    text-align: center;
+}
+
+span {
+    font-style: italic;
+    font-size: 1.1em;
+    font-family: 'Lato-Bold', sans-serif;
+}
+
+.wrapper {
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.circle {
+    position: absolute;
+    top: 10%;
+    z-index: 15;
+    width: 250px;
+    height: 250px;
+    background-image: url(./assets/images/vFT8KC9ACKY.jpg);
+    background-position: 45% 5%;
+    background-repeat: no-repeat;
+    border-radius: 360px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3), -5px -10px 20px rgba(255, 255, 255, 0.5);
+}
+
+.contact-info {
+    position: absolute;
+    top: 22%;
+    left: 34%;
+    z-index: 11;
+    width: 30%;
+    padding: 2.3%;
+    font-family: "Lato-Regular", "Maven Pro", sans-serif;
+    background-color: rgba(212, 235, 175, 0.2);
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgba(71, 55, 2, 0.5), -5px -10px 20px rgba(2, 58, 16, 0.5);
+}
+
+.contact-info li {
+    padding: 1%;
+    padding-left: 2%;
+    font-style: italic;
+}
+
+.contact-items span {
+    font-weight: bolder;
+}
+
+ul.icons {
+    width: 25%;
+}
+
+ul.icons li {
+    position: relative;
+    top: 165px;
+    left: 205%;
+    z-index: 20;
+    display: inline-block;
+    padding: 0.5%;
+}
+
+.fa {
+    width: 30px;
+    height: 28px;
+    margin: 0;
+    padding: 20%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.fa-facebook {
+    background-color: #405e9b;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.fa-google-plus {
+    background-color: rgb(216, 82, 72);
+    border-radius: 360px;
+}
+
+.fa-linkedin {
+    background-color: rgb(0, 119, 181);
+    border-radius: 4px;
+}
+
+.fa-skype {
+    background-color: rgb(0, 175, 240);
+    border-radius: 4px;
+}
+
+.fa-github {
+    background-color: rgb(23, 21, 21);
+    border-radius: 360px;
+}
+
+.fa-vk {
+    background-color: rgb(78, 125, 178);
+    border-radius: 4px;
+}
+
+.resume {
+    font-size: 1em;
+    font-family: 'Lato-Regular';
+}
+
+.info-about {
+    position: relative;
+    float: left;
+    padding: 18% 5% 10% 5%;
+    text-align: justify;
+}
+
+.info-about h3 {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.info-about p {
+    font-family: 'NatoSan', sans-serif;
+}
+
+.courses {
+    position: relative;
+    top: -57px;
+    left: 3%;
+    z-index: 10;
+    float: left;
+    width: 45%;
+    padding: 35px;
+    font-family: 'Lato-Bold', sans-serif;
+    background: linear-gradient(to top right, rgba(242, 255, 168, 0.863), rgba(236, 200, 40, 0.863));
+    border-radius: 6%;
+    box-shadow: 2px 6px 15px rgba(12, 7, 0, 0.5), -2px -6px 15px rgba(12, 0, 15, 0.5);
+}
+
+ul.education {
+    padding: 0;
+    margin-left: 5px;
+}
+
+ul.education .bio {
+    list-style-image: url(./assets/images/bio.png);
+}
+
+ul.education .codeacademy {
+    list-style-image: url(./assets/images/codeacademy.png);
+}
+
+ul.education .htmlacademy {
+    list-style-image: url(./assets/images/htmlacademy.png);
+}
+
+ul.education .javarush {
+    list-style-image: url(./assets/images/javarush.png);
+}
+
+ul.education li {
+    padding: 5px 10px;
+    list-style-position: inside;
+}
+
+ul.education li:hover {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+.profskill {
+    position: relative;
+    left: 3%;
+    z-index: 20;
+    width: 55%;
+    float: left;
+    clear: both;
+    margin-bottom: 5%;
+    padding: 22px 0;
+    background: linear-gradient(to top right, rgba(242, 255, 168, 0.863), rgba(236, 200, 40, 0.863));
+    border-radius: 6%;
+    box-shadow: 2px 6px 15px rgba(12, 7, 0, 0.5), -2px -6px 15px rgba(12, 0, 15, 0.5);
+}
+
+ul.skill {
+    width: 605px;
+    margin-left: 5px;
+    padding: 0;
+}
+
+ul.skill li {
+    display: inline-block;
+    padding: 2% 5%;
+    font-family: 'NatoSan', sans-serif;
+    font-weight: 600;
+}
+
+ul.skill li.js {
+    padding-left: 8%;
+}
+
+ul.skill li.git {
+    padding-left: 24%;
+}
+
+ul.skill li.html {
+    padding-left: 8%;
+}
+
+div.loader {
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.js .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-right: 8px solid #3498db;
+}
+
+.git .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-right: 8px solid #3498db;
+}
+
+.html .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-right: 8px solid #3498db;
+    border-bottom: 8px solid #3498db;
+}
+
+.other .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-right: 8px solid #3498db;
+    border-bottom: 8px solid #3498db;
+}
+
+.code {
+    position: relative;
+    top: -59px;
+    right: 5%;
+    float: right;
+    width: 42%;
+    padding: 2.3%;
+    background: linear-gradient(to top right, rgba(242, 255, 168, 0.863), rgba(236, 200, 40, 0.863));
+    border-radius: 6%;
+    box-shadow: 2px 6px 15px rgba(12, 7, 0, 0.5), -2px -6px 15px rgba(12, 0, 15, 0.5);
+}
+
+.example {
+    padding-left: 15%;
+}
+
+ul.example li {
+    padding: 10px 30px 10px 5px;
+    font-weight: 600;
+    list-style-image: linear-gradient(#FF7A2F 0, #FF7A2F 60%, #FFB214 60%);
+}
+
+.example li:hover {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+.example a {
+    color: rgb(23, 21, 21);
+}
+
+.language {
+    position: relative;
+    right: 5%;
+    float: right;
+    width: 32%;
+    padding: 20px;
+    font-size: 14px;
+    font-family: 'NatoSan', sans-serif;
+    background: linear-gradient(to top right, rgba(242, 255, 168, 0.863), rgba(236, 200, 40, 0.863));
+    border-radius: 6%;
+    box-shadow: 2px 6px 15px rgba(12, 7, 0, 0.5), -2px -6px 15px rgba(12, 0, 15, 0.5);
+}
