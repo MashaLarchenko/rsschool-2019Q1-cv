@@ -1,3 +1,32 @@
+@media screen and (max-width: 1000px) {
+    .contact-info {
+      top: 40%;
+       left: 35%;
+       width: 45%;
+    }
+
+    .info-about {
+        padding: 20% 15% 5% 5%;
+    }
+
+    .profskill {
+        padding-right: 10%;
+    }
+
+    .language{
+        padding-right: 10%;
+    }
+
+    .courses {
+        padding-right: 15%;
+    }
+
+    ul.icons {
+        left: 90%;
+    }
+}
+
+
 @media screen and (max-width:620px) {
     .circle {
         top: 35%;
@@ -15,13 +44,6 @@
         font-size: 12px;
     }
 
-    .info-about {
-        padding: 20% 15% 5% 5%;
-    }
-
-    .profskill {
-        padding-right: 10%;
-    }
 
     .courses {
       grid-row: 4;
@@ -44,7 +66,5 @@
         height: 20px;
     }
 
-    .icons {
-        left: 90%;
-    }
+  
 }
