@@ -58,7 +58,7 @@ html {
     min-width: 400px;
 }
 
-body {
+.body {
     width: 100%;
     margin: 0 auto;
 }
@@ -102,9 +102,11 @@ span {
 }
 
 .wrapper {
-    width: 1024px;
+    max-width: 1024px;
     height: 100%;
     margin: 0 auto;
+    background:linear-gradient(to top right, rgba(168, 255, 187, 0.28), rgba(224, 236, 40, 0.62));
+    box-shadow: 2px 6px 15px rgba(12, 7, 0, 0.5), -2px -6px 15px rgba(12, 0, 15, 0.5);
 }
 
 .circle {
@@ -126,7 +128,6 @@ span {
     left: 34%;
     z-index: 11;
     width: 30%;
-    min-width: 300px;
     padding: 2.3%;
     font-family: "Lato-Regular", "Maven Pro", sans-serif;
     background-color: rgba(212, 235, 175, 0.2);
@@ -140,29 +141,31 @@ span {
     font-style: italic;
 }
 
+.contact-info li:hover {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
 .contact-items span {
     font-weight: bolder;
 }
 
 ul.icons {
-    width: 25%;
+    position: fixed;
+    left: 87%;
 }
 
 ul.icons li {
     position: relative;
-    top: 165px;
-    left: 205%;
-    z-index: 20;
-    display: inline-block;
-    padding: 0.5%;
+    padding: 20%;
 }
 
 .fa {
     width: 30px;
     height: 28px;
-    margin: 0;
     padding: 20%;
     text-align: center;
+    font-size: 1rem;
     color: rgb(255, 255, 255);
 }
 
@@ -198,15 +201,19 @@ ul.icons li {
 }
 
 .resume {
+    display: grid;
+    grid-template-rows: repeat(4, minmax(1fr, max-content));
+    grid-template-columns: repeat(2, minmax(1fr, max-content));
     font-size: 1em;
     font-family: "Lato-Regular", "Maven Pro", sans-serif;
 }
 
 .info-about {
-    position: relative;
-    float: left;
-    padding: 18% 5% 10% 5%;
+    grid-column: 1/3;
+    grid-row: 1;
+    padding: 15% 5% 5% 5%;
     text-align: justify;
+    border-bottom: 2px solid rgb(56, 51, 51);
 }
 
 .info-about h3 {
@@ -219,17 +226,11 @@ ul.icons li {
 }
 
 .courses {
-    position: relative;
-    top: -57px;
-    left: 3%;
-    z-index: 10;
-    float: left;
-    width: 45%;
-    padding: 35px;
+    grid-column: 2;
+    grid-row: 3;
+    padding: 3% 5%;
     font-family: "Lato-Bold", "Maven Pro", sans-serif;
-    background: linear-gradient(to top right, rgba(242, 255, 168, 0.863), rgba(236, 200, 40, 0.863));
-    border-radius: 6%;
-    box-shadow: 2px 6px 15px rgba(12, 7, 0, 0.5), -2px -6px 15px rgba(12, 0, 15, 0.5);
+    border-bottom: 2px solid rgb(56, 51, 51);
 }
 
 ul.education {
@@ -264,100 +265,32 @@ ul.education li:hover {
 }
 
 .profskill {
-    position: relative;
-    left: 3%;
-    z-index: 20;
-    width: 55%;
-    float: left;
-    clear: both;
-    margin-bottom: 5%;
-    padding: 22px 0;
-    background: linear-gradient(to top right, rgba(242, 255, 168, 0.863), rgba(236, 200, 40, 0.863));
-    border-radius: 6%;
-    box-shadow: 2px 6px 15px rgba(12, 7, 0, 0.5), -2px -6px 15px rgba(12, 0, 15, 0.5);
+    grid-row: 2;
+    grid-column: 1/3;
+    border-bottom: 2px solid rgb(56, 51, 51);
 }
 
-ul.skill {
-    width: 605px;
-    margin-left: 5px;
-    padding: 0;
+ul.skill li.item {
+    padding: 2% 2%;
 }
 
-ul.skill li {
-    display: inline-block;
-    padding: 2% 5%;
-    font-family: "NatoSan", sans-serif;
-    font-weight: 600;
-}
-
-ul.skill li.js {
-    padding-left: 8%;
-}
-
-ul.skill li.frameworks {
-    padding-left: 8%;
-}
-
-ul.skill li.tools {
-    padding-left: 8%;
-}
-
-div.loader {
-    margin-top: 5%;
-    margin-bottom: 7%;
-}
-
-.loader {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.js .loader {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #3498db;
-    border-right: 8px solid #3498db;
-}
-
-.git .loader {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #3498db;
-    border-right: 8px solid #3498db;
-}
-
-.html .loader {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #3498db;
-    border-right: 8px solid #3498db;
-    border-bottom: 8px solid #3498db;
-}
-
-.other .loader {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #3498db;
-    border-right: 8px solid #3498db;
-    border-bottom: 8px solid #3498db;
+ul.skill li.item span{
+    font-weight: bold;
 }
 
 .code {
-    position: relative;
-    top: -59px;
-    right: 5%;
-    float: right;
-    width: 42%;
-    padding: 2.3%;
-    background: linear-gradient(to top right, rgba(242, 255, 168, 0.863), rgba(236, 200, 40, 0.863));
-    border-radius: 6%;
-    box-shadow: 2px 6px 15px rgba(12, 7, 0, 0.5), -2px -6px 15px rgba(12, 0, 15, 0.5);
-}
+    grid-row: 3;
+    grid-column: 1;
+    padding: 3% 5%;
+    border-bottom: 2px solid rgb(56, 51, 51);
+    border-right: 2px solid rgb(56, 51, 51);
 
-.example {
-    padding-left: 15%;
 }
 
 ul.example li {
     padding: 10px 30px 10px 5px;
     font-weight: 600;
+    font-size: 1.2rem;
     list-style-image: linear-gradient(#FF7A2F 0, #FF7A2F 60%, #FFB214 60%);
 }
 
@@ -371,14 +304,13 @@ ul.example li {
 }
 
 .language {
-    position: relative;
-    right: 5%;
-    float: right;
-    width: 32%;
-    padding: 20px;
-    font-size: 14px;
+    grid-row: 4;
+    grid-column: 1/3;
+    font-size: 1rem;
     font-family: "NatoSan", sans-serif;
-    background: linear-gradient(to top right, rgba(242, 255, 168, 0.863), rgba(236, 200, 40, 0.863));
-    border-radius: 6%;
-    box-shadow: 2px 6px 15px rgba(12, 7, 0, 0.5), -2px -6px 15px rgba(12, 0, 15, 0.5);
+    border-bottom: 2px solid rgb(56, 51, 51);
+}
+
+.language p span {
+    font-weight: bold;
 }
