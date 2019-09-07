@@ -64,7 +64,18 @@
     .fa {
         width: 20px;
         height: 20px;
+    }  
+}
+
+@media screen and (max-width:400px) { 
+    .contact-info {
+        top: 35%;
+        left: 40%;
     }
 
-  
+    .circle {
+        top: 30%;
+        width: 40vw;
+        height: 28vh;
+    }
 }
